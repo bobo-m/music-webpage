@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en=US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Bob Anugrah Murmu">
+        <link rel="Stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a23965119a.js" crossorigin="anonymous"></script>
+        <title>OffWhites</title>
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="Images/logo.jpg"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">PLAYLISTS</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="">ABOUT</a></li>
+                    </ul>
+                </div>
+                <i class="fa-solid fa-bars fa-pull" onclick="showMenu()"></i>
+            </nav>
+            <div class="textbox">
+                <h1>The OffWhites</h1>
+                <p>All your favourite curated playlists in one place</p>
+                <a href="" class="hero-btn">Visit our Spotify</a>
+            </div>
+        </section>
+        
+        <section class="playlists">
+            <h1>Playlists</h1>
+            <div class="container">
+                <form action="" class="search-bar">
+                    <input type="text" placeholder="Search playlists" name="search" id="search">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+            </div>
+        </section>
+        <script>
+            var navLinks = document.getElementById("navLinks");
+
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+        </script>
+                
+        
+    </body>
+</html>
